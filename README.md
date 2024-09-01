@@ -11,31 +11,31 @@ Containers are lightweight, portable units that package an application along wit
 #### Master Node🧠: 
 The control plane of a Kubernetes cluster. It manages the state of the cluster, orchestrates the scheduling of containers, and handles the API requests
 #### Components:
-**kube-apiserver: 
+**kube-apiserver:** 
 The front-end for the Kubernetes control plane, responsible for handling API requests.
 
-**etcd: 
+**etcd:** 
 A key-value store that holds the state and configuration data of the cluster.
 
-**kube-scheduler: 
+**kube-scheduler:** 
 Determines on which node a newly created Pod should run based on resource availability and other constraints.
 
-**kube-controller-manager: 
+**kube-controller-manager:**
 Runs various controllers that ensure the desired state of the cluster (e.g., node management, replication, etc.).
 
-**cloud-controller-manager: 
+**cloud-controller-manager:**
 Manages cloud-specific control logic.
 
 #### Worker Nodes⚙️: 
 The nodes where the application workloads run. Each node runs at least one container runtime (like Docker), and the following Kubernetes components:
 
-**kubelet: 
+**kubelet:**
 An agent that runs on each worker node, ensuring containers are running as expected.
 
-**kube-proxy: 
+**kube-proxy:**
 Manages network rules on each node, ensuring that communication to and from containers happens as intended.
 
-**Container Runtime: 
+**Container Runtime:**
 Software that runs the containers, e.g., Docker, containerd.
 Pods
 
@@ -81,22 +81,22 @@ A package manager for Kubernetes that helps in managing Kubernetes applications 
 
 ## Benefits of Kubernetes
 
-**Scalability📈: Automatically scale your applications based on demand.
+**Scalability📈:** Automatically scale your applications based on demand.
 
-**High Availability🟢: Ensures that your applications are highly available by automatically replacing failed Pods.
+**High Availability🟢:** Ensures that your applications are highly available by automatically replacing failed Pods.
 
-**Portability🏗️: Run your workloads consistently across different environments (on-premises, cloud, hybrid).
+**Portability🏗️:** Run your workloads consistently across different environments (on-premises, cloud, hybrid).
 
-**Self-Healing💪: Automatically replaces and reschedules containers that fail, are unresponsive, or don’t meet the health check requirements.
+**Self-Healing💪:** Automatically replaces and reschedules containers that fail, are unresponsive, or don’t meet the health check requirements.
 
-**Declarative Configuration📝: Manage and automate your infrastructure using declarative YAML or JSON files.
+**Declarative Configuration📝:** Manage and automate your infrastructure using declarative YAML or JSON files.
 
 ## Use Cases
 
-**Microservices🧩: Orchestrating and scaling microservices-based applications.
+**Microservices🧩:** Orchestrating and scaling microservices-based applications.
 
-**CI/CD Pipelines🔄: Running continuous integration and continuous deployment pipelines.
+**CI/CD Pipelines🔄:** Running continuous integration and continuous deployment pipelines.
 
-**Big Data & Machine Learning🧠: Scaling workloads like big data processing and machine learning model training.
+**Big Data & Machine Learning🧠:** Scaling workloads like big data processing and machine learning model training.
 
-**Hybrid and Multi-Cloud☁️: Managing applications across on-premises and multiple cloud environments.
+**Hybrid and Multi-Cloud☁️:** Managing applications across on-premises and multiple cloud environments.
